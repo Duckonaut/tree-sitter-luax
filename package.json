@@ -1,0 +1,22 @@
+{
+  "name": "tree-sitter-luax",
+  "version": "1.0.0",
+  "description": "Tree Sitter parser for luax",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Duckonaut",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.15.0"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.luax",
+      "file-types": [
+        "luax"
+      ]
+    }
+  ]
+}
