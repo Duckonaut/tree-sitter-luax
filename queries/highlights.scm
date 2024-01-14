@@ -1,4 +1,4 @@
-;;; Highlighting for lua
+;;; Highlighting for luax
 
 ;;; Builtins
 ;; Keywords
@@ -85,6 +85,11 @@
  "]"
  "{"
  "}"] @punctuation.bracket
+
+(html_template tag: (identifier) @tag) @tag
+(html_template_attributes name: (identifier) @constant)
+(html_template_text) @variable
+
 
 ;; Variables
 (identifier) @variable
@@ -178,3 +183,4 @@
 
 ;; Error
 (ERROR) @error
+
